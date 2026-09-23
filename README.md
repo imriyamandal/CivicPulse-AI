@@ -724,16 +724,6 @@ The result is an end-to-end urban intelligence workflow rather than an isolated 
 
 ---
 
-## Academic / Portfolio Context
-
-**CivicPulse AI** was developed as an academic and portfolio project under:
-
-**AICTE · IBM SkillsBuild Data Analytics with AI Internship 2026 · BharatCares**
-
-The project demonstrates practical application of data analytics, machine learning, NLP, geospatial analysis, data visualization, dashboard engineering, model interpretation, and reproducible analytical workflows.
-
----
-
 ## Future Enhancements
 
 - Live NYC 311 data ingestion
@@ -750,14 +740,6 @@ The project demonstrates practical application of data analytics, machine learni
 - Cloud deployment
 - Role-based civic analytics workspaces
 - Automated evidence reports
-
----
-
-## Project Status
-
-**Status: Completed academic/portfolio prototype**
-
-The repository contains a complete analytical notebook, trained model artifacts, generated analytical outputs, an interactive dashboard, a Streamlit reference application, project documentation, and a reproducible analytical workflow.
 
 ---
 
