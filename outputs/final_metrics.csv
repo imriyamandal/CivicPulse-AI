@@ -1,0 +1,10 @@
+Model / Pipeline,Task,Metric,Value
+NLP Classifier (TF-IDF + Logistic Reg),Text Complaint Classification,Accuracy,76.19%
+NLP Classifier (TF-IDF + Logistic Reg),Text Complaint Classification,Macro F1-Score,0.6304
+NLP Classifier (TF-IDF + Logistic Reg),Text Complaint Classification,Weighted F1-Score,0.7322
+DBSCAN Spatial Clustering,Geospatial Hotspot Detection,Detected Clusters,75
+DBSCAN Spatial Clustering,Geospatial Hotspot Detection,Noise Points,"14,541"
+Random Forest Regressor,Daily Volume Forecasting,Mean Absolute Error (MAE),502.39
+Random Forest Regressor,Daily Volume Forecasting,Root Mean Squared Error (RMSE),612.63
+Random Forest Regressor,Daily Volume Forecasting,R² Score,0.3848
+Random Forest Regressor,Next Observed Day Estimate,Estimated Requests,5431

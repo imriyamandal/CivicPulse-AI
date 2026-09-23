@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f52013101ee7e571fbf394aebb644875 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f52013101ee7e571fbf394aebb644875" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f52013101ee7e571fbf394aebb644875 = L.map(
+                "map_f52013101ee7e571fbf394aebb644875",
+                {
+                    center: [40.73061, -73.935242],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3381e7f3c2374d73613ab39bc3280100 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3381e7f3c2374d73613ab39bc3280100.addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+            var circle_marker_f4a106e222c356fd50d094b8fc080775 = L.circleMarker(
+                [40.733159225596154, -73.99100375290205],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_761055563ca9f4929f8e047713e41ce7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73884cbd7684baa471254d1566af88a8 = $(`<div id="html_73884cbd7684baa471254d1566af88a8" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 3</b><br>Borough: MANHATTAN<br>Requests: 1411<br>Primary: Noise - Residential</div>`)[0];
+                popup_761055563ca9f4929f8e047713e41ce7.setContent(html_73884cbd7684baa471254d1566af88a8);
+            
+        
+
+        circle_marker_f4a106e222c356fd50d094b8fc080775.bindPopup(popup_761055563ca9f4929f8e047713e41ce7)
+        ;
+
+        
+    
+    
+            circle_marker_f4a106e222c356fd50d094b8fc080775.bindTooltip(
+                `<div>
+                     Cluster 3: 1411 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e6785b466e0991dff77a8a6a8b9de06 = L.circleMarker(
+                [40.83923705544419, -73.93796331637675],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_84bca6d58c17a63bdb81c18068a7017f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb939c5f66ffde294e7620ce8a9d7488 = $(`<div id="html_fb939c5f66ffde294e7620ce8a9d7488" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 0</b><br>Borough: MANHATTAN<br>Requests: 1312<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_84bca6d58c17a63bdb81c18068a7017f.setContent(html_fb939c5f66ffde294e7620ce8a9d7488);
+            
+        
+
+        circle_marker_4e6785b466e0991dff77a8a6a8b9de06.bindPopup(popup_84bca6d58c17a63bdb81c18068a7017f)
+        ;
+
+        
+    
+    
+            circle_marker_4e6785b466e0991dff77a8a6a8b9de06.bindTooltip(
+                `<div>
+                     Cluster 0: 1312 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fee067c1b8500dafb27228424a60d85f = L.circleMarker(
+                [40.847814144529195, -73.90898837844297],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_a9394ef9d266e1cd5d4cfdadc175d770 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8da23d9a355f0e9312e00fc841b97de = $(`<div id="html_d8da23d9a355f0e9312e00fc841b97de" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 6</b><br>Borough: BRONX<br>Requests: 1267<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_a9394ef9d266e1cd5d4cfdadc175d770.setContent(html_d8da23d9a355f0e9312e00fc841b97de);
+            
+        
+
+        circle_marker_fee067c1b8500dafb27228424a60d85f.bindPopup(popup_a9394ef9d266e1cd5d4cfdadc175d770)
+        ;
+
+        
+    
+    
+            circle_marker_fee067c1b8500dafb27228424a60d85f.bindTooltip(
+                `<div>
+                     Cluster 6: 1267 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5acb8023616d78a4d2aa4ae0c4cc6569 = L.circleMarker(
+                [40.65144688589985, -73.95534700167468],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.08, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_23b277edbe00948c8ab53e48df96a6ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bbfb0207c1ca1063180c12aef49f2af = $(`<div id="html_1bbfb0207c1ca1063180c12aef49f2af" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 2</b><br>Borough: BROOKLYN<br>Requests: 508<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_23b277edbe00948c8ab53e48df96a6ff.setContent(html_1bbfb0207c1ca1063180c12aef49f2af);
+            
+        
+
+        circle_marker_5acb8023616d78a4d2aa4ae0c4cc6569.bindPopup(popup_23b277edbe00948c8ab53e48df96a6ff)
+        ;
+
+        
+    
+    
+            circle_marker_5acb8023616d78a4d2aa4ae0c4cc6569.bindTooltip(
+                `<div>
+                     Cluster 2: 508 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f02a43581bc2724be8aa3c01cb988c5 = L.circleMarker(
+                [40.79007566228475, -73.97308864019816],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.25, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_67b9323de542bd13f6ad700ab1641bdc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_166d0c895b716889a9fbc32c129c33ff = $(`<div id="html_166d0c895b716889a9fbc32c129c33ff" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 20</b><br>Borough: MANHATTAN<br>Requests: 425<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_67b9323de542bd13f6ad700ab1641bdc.setContent(html_166d0c895b716889a9fbc32c129c33ff);
+            
+        
+
+        circle_marker_2f02a43581bc2724be8aa3c01cb988c5.bindPopup(popup_67b9323de542bd13f6ad700ab1641bdc)
+        ;
+
+        
+    
+    
+            circle_marker_2f02a43581bc2724be8aa3c01cb988c5.bindTooltip(
+                `<div>
+                     Cluster 20: 425 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfe56219be8169b8714d652f5f9e7446 = L.circleMarker(
+                [40.677114069728745, -73.95675454405004],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.76, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_981367724069300c8b93ed28e938b30a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_569f9c0f6ff0cb7819353fa135bfe9e9 = $(`<div id="html_569f9c0f6ff0cb7819353fa135bfe9e9" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 36</b><br>Borough: BROOKLYN<br>Requests: 376<br>Primary: Request Large Bulky Item Collection</div>`)[0];
+                popup_981367724069300c8b93ed28e938b30a.setContent(html_569f9c0f6ff0cb7819353fa135bfe9e9);
+            
+        
+
+        circle_marker_bfe56219be8169b8714d652f5f9e7446.bindPopup(popup_981367724069300c8b93ed28e938b30a)
+        ;
+
+        
+    
+    
+            circle_marker_bfe56219be8169b8714d652f5f9e7446.bindTooltip(
+                `<div>
+                     Cluster 36: 376 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_335ca4e16a986577bfd0796ed8d66c56 = L.circleMarker(
+                [40.764346329699116, -73.98773336337531],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.06, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_151c7af38e285e8a1aa291129874ba48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4a432ca3b27516e1117777000555c3b = $(`<div id="html_c4a432ca3b27516e1117777000555c3b" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 15</b><br>Borough: MANHATTAN<br>Requests: 306<br>Primary: Noise - Residential</div>`)[0];
+                popup_151c7af38e285e8a1aa291129874ba48.setContent(html_c4a432ca3b27516e1117777000555c3b);
+            
+        
+
+        circle_marker_335ca4e16a986577bfd0796ed8d66c56.bindPopup(popup_151c7af38e285e8a1aa291129874ba48)
+        ;
+
+        
+    
+    
+            circle_marker_335ca4e16a986577bfd0796ed8d66c56.bindTooltip(
+                `<div>
+                     Cluster 15: 306 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a56f5c10b7a90f735e2b6db5da339458 = L.circleMarker(
+                [40.709103085105326, -74.00855708475815],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.46, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_b299fab2f78fd021e87c1375e8ad2342 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50c1d101757c7ceed504bac048264e39 = $(`<div id="html_50c1d101757c7ceed504bac048264e39" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 23</b><br>Borough: MANHATTAN<br>Requests: 246<br>Primary: Panhandling</div>`)[0];
+                popup_b299fab2f78fd021e87c1375e8ad2342.setContent(html_50c1d101757c7ceed504bac048264e39);
+            
+        
+
+        circle_marker_a56f5c10b7a90f735e2b6db5da339458.bindPopup(popup_b299fab2f78fd021e87c1375e8ad2342)
+        ;
+
+        
+    
+    
+            circle_marker_a56f5c10b7a90f735e2b6db5da339458.bindTooltip(
+                `<div>
+                     Cluster 23: 246 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_841b4e5a5367c08c938313cad69d0f2b = L.circleMarker(
+                [40.702361675827575, -73.90779346178925],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.1, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_f298ccf5ba6e072e66b296159fa64640 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3259cfb944ed9d47f657331577a3b07 = $(`<div id="html_f3259cfb944ed9d47f657331577a3b07" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 5</b><br>Borough: QUEENS<br>Requests: 210<br>Primary: Noise - Residential</div>`)[0];
+                popup_f298ccf5ba6e072e66b296159fa64640.setContent(html_f3259cfb944ed9d47f657331577a3b07);
+            
+        
+
+        circle_marker_841b4e5a5367c08c938313cad69d0f2b.bindPopup(popup_f298ccf5ba6e072e66b296159fa64640)
+        ;
+
+        
+    
+    
+            circle_marker_841b4e5a5367c08c938313cad69d0f2b.bindTooltip(
+                `<div>
+                     Cluster 5: 210 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aec0446da9783a10cd7940485b3717ac = L.circleMarker(
+                [40.8488109760906, -73.88753069060883],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.06, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_ac0f21edc1ade1aaf47b31b288cf4fd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2959386cb12972533bd988d898afb4ef = $(`<div id="html_2959386cb12972533bd988d898afb4ef" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 13</b><br>Borough: BRONX<br>Requests: 206<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_ac0f21edc1ade1aaf47b31b288cf4fd8.setContent(html_2959386cb12972533bd988d898afb4ef);
+            
+        
+
+        circle_marker_aec0446da9783a10cd7940485b3717ac.bindPopup(popup_ac0f21edc1ade1aaf47b31b288cf4fd8)
+        ;
+
+        
+    
+    
+            circle_marker_aec0446da9783a10cd7940485b3717ac.bindTooltip(
+                `<div>
+                     Cluster 13: 206 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98bcf5dc6217f7f905e22888c2a836f6 = L.circleMarker(
+                [40.77713115503596, -73.9527563011122],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.85, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_68a113de08d1697a34412b3260726347 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_236432353912869f9a9d70be4bb5de2d = $(`<div id="html_236432353912869f9a9d70be4bb5de2d" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 22</b><br>Borough: MANHATTAN<br>Requests: 185<br>Primary: Noise</div>`)[0];
+                popup_68a113de08d1697a34412b3260726347.setContent(html_236432353912869f9a9d70be4bb5de2d);
+            
+        
+
+        circle_marker_98bcf5dc6217f7f905e22888c2a836f6.bindPopup(popup_68a113de08d1697a34412b3260726347)
+        ;
+
+        
+    
+    
+            circle_marker_98bcf5dc6217f7f905e22888c2a836f6.bindTooltip(
+                `<div>
+                     Cluster 22: 185 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed0f4775c9d93436fd1908d6800dd71a = L.circleMarker(
+                [40.803573606805266, -73.95254790586414],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.53, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_5720192ac940397428fabf2bb752fb2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef25c61d17745070f95ffbb00d193627 = $(`<div id="html_ef25c61d17745070f95ffbb00d193627" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 38</b><br>Borough: MANHATTAN<br>Requests: 153<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_5720192ac940397428fabf2bb752fb2f.setContent(html_ef25c61d17745070f95ffbb00d193627);
+            
+        
+
+        circle_marker_ed0f4775c9d93436fd1908d6800dd71a.bindPopup(popup_5720192ac940397428fabf2bb752fb2f)
+        ;
+
+        
+    
+    
+            circle_marker_ed0f4775c9d93436fd1908d6800dd71a.bindTooltip(
+                `<div>
+                     Cluster 38: 153 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aac9f31d4804bca05811c5f5f7167ca0 = L.circleMarker(
+                [40.71440463232754, -73.95959032742674],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.3, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_19f4a38470a81d51870e61a3250cfe84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78c69424e6959c903fa1d775d9cc1309 = $(`<div id="html_78c69424e6959c903fa1d775d9cc1309" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 44</b><br>Borough: BROOKLYN<br>Requests: 130<br>Primary: Noise - Residential</div>`)[0];
+                popup_19f4a38470a81d51870e61a3250cfe84.setContent(html_78c69424e6959c903fa1d775d9cc1309);
+            
+        
+
+        circle_marker_aac9f31d4804bca05811c5f5f7167ca0.bindPopup(popup_19f4a38470a81d51870e61a3250cfe84)
+        ;
+
+        
+    
+    
+            circle_marker_aac9f31d4804bca05811c5f5f7167ca0.bindTooltip(
+                `<div>
+                     Cluster 44: 130 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_338a0df0336b69ede3274822173c51f1 = L.circleMarker(
+                [40.831756677115486, -73.90201350024606],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.24, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_aa870ba252ad45090b0153cbbd81b883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de948da69a55d72b6cbe7b550e27ce0d = $(`<div id="html_de948da69a55d72b6cbe7b550e27ce0d" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 37</b><br>Borough: BRONX<br>Requests: 124<br>Primary: Noise - Residential</div>`)[0];
+                popup_aa870ba252ad45090b0153cbbd81b883.setContent(html_de948da69a55d72b6cbe7b550e27ce0d);
+            
+        
+
+        circle_marker_338a0df0336b69ede3274822173c51f1.bindPopup(popup_aa870ba252ad45090b0153cbbd81b883)
+        ;
+
+        
+    
+    
+            circle_marker_338a0df0336b69ede3274822173c51f1.bindTooltip(
+                `<div>
+                     Cluster 37: 124 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a764579c62195750e7093e6b704687fa = L.circleMarker(
+                [40.875213281534236, -73.90192620082676],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.23, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_ebb05e608b9aa09b0347b1a3e153db4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd5cf69954b3dc0b076eaacd8997ef0e = $(`<div id="html_dd5cf69954b3dc0b076eaacd8997ef0e" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 19</b><br>Borough: BRONX<br>Requests: 123<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_ebb05e608b9aa09b0347b1a3e153db4f.setContent(html_dd5cf69954b3dc0b076eaacd8997ef0e);
+            
+        
+
+        circle_marker_a764579c62195750e7093e6b704687fa.bindPopup(popup_ebb05e608b9aa09b0347b1a3e153db4f)
+        ;
+
+        
+    
+    
+            circle_marker_a764579c62195750e7093e6b704687fa.bindTooltip(
+                `<div>
+                     Cluster 19: 123 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23e24056a60c11894b1f14a4d0167059 = L.circleMarker(
+                [40.671696303340966, -73.97944259330092],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.21, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_d09a340bed13f1a983d712a11e67f02b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19249589b4ca7a6b320dec4265f8b002 = $(`<div id="html_19249589b4ca7a6b320dec4265f8b002" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 17</b><br>Borough: BROOKLYN<br>Requests: 121<br>Primary: Request Large Bulky Item Collection</div>`)[0];
+                popup_d09a340bed13f1a983d712a11e67f02b.setContent(html_19249589b4ca7a6b320dec4265f8b002);
+            
+        
+
+        circle_marker_23e24056a60c11894b1f14a4d0167059.bindPopup(popup_d09a340bed13f1a983d712a11e67f02b)
+        ;
+
+        
+    
+    
+            circle_marker_23e24056a60c11894b1f14a4d0167059.bindTooltip(
+                `<div>
+                     Cluster 17: 121 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68531711f3c514e397d85f006b8119a6 = L.circleMarker(
+                [40.798855107732905, -73.93820306520597],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.16, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_34c44fae9cf350f0726b5675dc47b4b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4d431bb63b813856fb6c668352881a2 = $(`<div id="html_d4d431bb63b813856fb6c668352881a2" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 35</b><br>Borough: MANHATTAN<br>Requests: 116<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_34c44fae9cf350f0726b5675dc47b4b0.setContent(html_d4d431bb63b813856fb6c668352881a2);
+            
+        
+
+        circle_marker_68531711f3c514e397d85f006b8119a6.bindPopup(popup_34c44fae9cf350f0726b5675dc47b4b0)
+        ;
+
+        
+    
+    
+            circle_marker_68531711f3c514e397d85f006b8119a6.bindTooltip(
+                `<div>
+                     Cluster 35: 116 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9dd16f9b66f127976643c2afcd3e97e = L.circleMarker(
+                [40.68776644673117, -73.91882426989957],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.15, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_ee40a6ae01ab811c139a8ba11f1e0d9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de9436078825f9421037bfc0fb3c922b = $(`<div id="html_de9436078825f9421037bfc0fb3c922b" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 43</b><br>Borough: BROOKLYN<br>Requests: 115<br>Primary: Noise - Residential</div>`)[0];
+                popup_ee40a6ae01ab811c139a8ba11f1e0d9a.setContent(html_de9436078825f9421037bfc0fb3c922b);
+            
+        
+
+        circle_marker_c9dd16f9b66f127976643c2afcd3e97e.bindPopup(popup_ee40a6ae01ab811c139a8ba11f1e0d9a)
+        ;
+
+        
+    
+    
+            circle_marker_c9dd16f9b66f127976643c2afcd3e97e.bindTooltip(
+                `<div>
+                     Cluster 43: 115 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_520865cb589bb9b3d657a83157f9a67e = L.circleMarker(
+                [40.701150952594965, -73.92245989863673],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.120000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_8f06118cf37e30e5f9643c8fd317e582 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c4c6a7821316fa58db6270d7983ed53 = $(`<div id="html_0c4c6a7821316fa58db6270d7983ed53" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 31</b><br>Borough: BROOKLYN<br>Requests: 112<br>Primary: Noise - Residential</div>`)[0];
+                popup_8f06118cf37e30e5f9643c8fd317e582.setContent(html_0c4c6a7821316fa58db6270d7983ed53);
+            
+        
+
+        circle_marker_520865cb589bb9b3d657a83157f9a67e.bindPopup(popup_8f06118cf37e30e5f9643c8fd317e582)
+        ;
+
+        
+    
+    
+            circle_marker_520865cb589bb9b3d657a83157f9a67e.bindTooltip(
+                `<div>
+                     Cluster 31: 112 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_703ed3dc40c889e2bb29a5d3e882e4b1 = L.circleMarker(
+                [40.74759249699831, -73.87683266120577],
+                {"bubblingMouseEvents": true, "color": "#e63946", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e63946", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.120000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_f52013101ee7e571fbf394aebb644875);
+        
+    
+        var popup_244eef48ce9bd4882f90cde39cbfc09a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_111f43f710376a8d1f22decb56005f70 = $(`<div id="html_111f43f710376a8d1f22decb56005f70" style="width: 100.0%; height: 100.0%;"><b>Hotspot Cluster 24</b><br>Borough: QUEENS<br>Requests: 112<br>Primary: HEAT/HOT WATER</div>`)[0];
+                popup_244eef48ce9bd4882f90cde39cbfc09a.setContent(html_111f43f710376a8d1f22decb56005f70);
+            
+        
+
+        circle_marker_703ed3dc40c889e2bb29a5d3e882e4b1.bindPopup(popup_244eef48ce9bd4882f90cde39cbfc09a)
+        ;
+
+        
+    
+    
+            circle_marker_703ed3dc40c889e2bb29a5d3e882e4b1.bindTooltip(
+                `<div>
+                     Cluster 24: 112 requests
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
