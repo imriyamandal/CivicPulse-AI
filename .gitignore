@@ -73,4 +73,8 @@ desktop.ini
 # Local runtime/cache
 # ================================
 .cache/
-.data/civicpulse_dataset.csvdata/civicpulse_dataset.csv
+
+# ================================
+# Large local datasets
+# ================================
+data/civicpulse_dataset.csv
